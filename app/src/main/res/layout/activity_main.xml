@@ -11,17 +11,24 @@
     android:id="@+id/tapCounterRelativeLayout"
     android:background="@drawable/paper">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/countTextView" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TAP"
+        android:text="@string/tapButtonText"
         android:id="@+id/tapButton"
         android:layout_marginBottom="46dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/countTextView"
+        android:layout_above="@+id/tapButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp"
+        android:textSize="30dp" />
 </RelativeLayout>

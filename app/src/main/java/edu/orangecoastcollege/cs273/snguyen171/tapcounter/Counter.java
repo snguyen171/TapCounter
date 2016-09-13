@@ -6,7 +6,6 @@ package edu.orangecoastcollege.cs273.snguyen171.tapcounter;
 public class Counter {
 
     private int counter;
-    private int totalCount;
 
     public Counter(){
         counter = 0;
@@ -14,16 +13,7 @@ public class Counter {
 
     public int getCounter() {return counter; }
 
-    public int getTotalCount() {return totalCount; }
-
     public void setCounter(int counter){
         this.counter = counter;
-        recalculateCounter();
     }
-
-    private void recalculateCounter()
-    {
-        totalCount = totalCount + counter;
-    }
-
 }

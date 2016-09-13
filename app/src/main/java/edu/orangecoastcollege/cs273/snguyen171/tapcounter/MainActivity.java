@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView countTextView;
     private Button tapButton;
+    private int count = 0;
 
     Counter currentCounter = new Counter();
 
@@ -24,9 +25,8 @@ public class MainActivity extends AppCompatActivity {
         tapButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int count = 0;
-                currentCounter.setCounter(count++);
-                countTextView.setText(Integer.toString(currentCounter.getTotalCount()));
+                currentCounter.setCounter(++count);
+                countTextView.setText(Integer.toString(currentCounter.getCounter()));
             }
         });
     }
